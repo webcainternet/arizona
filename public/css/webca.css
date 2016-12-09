@@ -1,0 +1,281 @@
+.navbar {
+    min-height: 75px;
+}
+
+@media (min-width: 768px) {
+	.navbar-default {
+	    background-color: #fff;
+	    border-color: rgba(34,34,34,.05);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.navbar-default .nav>li>a, .navbar-default .nav>li>a:focus {
+    color: #222;
+    background-color: transparent;
+}
+
+.navbar-default .nav>li.active>a, .navbar-default .nav>li.active>a:focus {
+    color: #1daeeb!important;
+    background-color: transparent;
+}
+
+
+
+.home-botao {
+    padding: 15px 30px;
+
+	border: none;
+    border-radius: 300px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+	color: #fff;
+    background-color: #1daeeb;
+    border-color: #1daeeb;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+
+    margin-right: 10px;
+}
+
+.sem-bullet {
+	list-style-type:none;
+}
+
+.home-itenstopo {
+	text-align: right;
+	padding: 10px 0px 10px 0px;
+}
+
+
+header {
+    background-image: url(../img/planos-seguro.jpg);
+}
+
+.home-botao2 {
+	background-color: #FFF;
+	color: #1daeeb;
+	padding: 30px 60px; 
+}
+
+
+
+
+.navbar-brand {
+    height: 75px;
+}
+.logoArizona {
+    padding-left: 5px;
+}
+.divlogo {
+    float: left;
+    margin-top: 20px;
+}
+.divlogo div {
+	text-align: right;
+	margin-top: 7px;
+	font-size: 10px;
+}
+
+.titulo1 {
+    font-size: 28px;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+.saibamais {
+	margin-bottom: 30px;
+	background: #1daeeb;
+    border: solid 1px #FFF;
+    color: #FFF;
+}
+.saibamais1 {
+	margin-bottom: 30px;
+	background: #a1247a;
+    border: solid 1px #FFF;
+    color: #FFF;
+}
+.saibamais2 {
+	margin-bottom: 30px;
+	background: #790f58;
+    border: solid 1px #FFF;
+    color: #FFF;
+}
+.saibamais3 {
+	margin-bottom: 30px;
+	background: #44316e;
+    border: solid 1px #FFF;
+    color: #FFF;
+}
+.saibamais-azul {
+	background-color: #1daeeb;
+	color: #FFF;
+	border: solid 2px #FFF;
+	width: 100%;
+}
+.saibamais-azul:hover {
+	background-color: #FFF;
+	color: #1daeeb;
+	border: solid 2px #1daeeb;
+}
+
+
+
+.bg-primary1 {
+	background-color: #a1247a;
+	color: #FFF;
+}
+.bg-primary2 {
+	background-color: #790f58;
+	color: #FFF;
+}
+.bg-primary3 {
+	background-color: #44316e;
+	color: #FFF;
+}
+
+.divplanos {
+	background-color: #FFF !important;
+	margin: 0px 0px 15px 0px;
+    padding: 15px !important;
+    border-radius: 15px;
+}
+
+.divplanos p {
+	color: #444;
+}
+.divplanos p span {
+	
+}
+
+.reais {
+	font-size: 52px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+	color: #1daeeb;
+}
+.centavos {
+	color: #1daeeb;
+}
+
+.reais1 {
+	color: #a1247a;
+}
+.centavos1 {
+	color: #a1247a;
+}
+.reais2 {
+	color: #790f58;
+}
+.centavos2 {
+	color: #790f58;
+}
+.reais3 {
+	color: #44316e;
+}
+.centavos3 {
+	color: #44316e;
+}
+
+.gigas {
+	font-size: 32px;
+	margin-bottom: 0px;
+}
+
+.gigas1 {
+	color: #a1247a !important;	
+}
+.gigas2 {
+	color: #790f58 !important;	
+}
+.gigas3 {
+	color: #44316e !important;	
+}
+
+#services {
+    padding: 100px 0px 0px 0px;
+}
+
+.titulo-azul {
+	color: #1daeeb;
+    font-size: 18px;
+}
+
+
+#portfolio input[type="text"] {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 15px;
+	background: rgb(34, 34, 34) !important;
+    border: solid 2px #FFF !important;
+}
+
+#portfolio textarea {
+	width: 100%;
+	height: 183px;
+	margin-bottom: 10px;
+	padding: 15px;
+	background: rgb(34, 34, 34) !important;
+    border: solid 2px #FFF !important;
+}
+
+.contato {
+	margin-bottom: 30px;
+	background: #FFF;
+    border: solid 1px #FFF;
+    color: #222;
+}
+.contato:hover {
+	background: #1daeeb;
+    border: solid 1px #FFF;
+    color: #FFF;
+}
+
+.footerdiv {
+	background-color: #f2f1ee;
+	color: #403d39;
+    font-weight: 100;
+}
+
+.textos, .direitos {
+    padding: 30px 0;
+}
+.textos p {
+	font-size: 8px;
+}
+
+.direitos {
+	font-size: 11px;
+	color: #444;
+}
+
+
+
+@media (min-width: 768px){
+	.navbar-default .nav>li>a:focus:hover, .navbar-default .nav>li>a:hover {
+	    color: #1daeeb;
+	}
+}
+
+.linkcinza li a {
+	color: rgb(64, 61, 57);
+}
+
+
+
+.bodycontrate {
+	/* padding: 15px; */
+}
+
+.telefonefonte {
+	font-size: 22px;
+}
