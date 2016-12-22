@@ -1,0 +1,1 @@
+[Thu Dec 22 16:25:40.538644 2016] [:error] [pid 17] [client 172.17.0.1:59892] script '/var/www/html/public/index.php' not found or unable to stat

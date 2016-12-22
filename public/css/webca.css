@@ -59,7 +59,7 @@
 
 
 header {
-    background-image: url(../img/planos-seguro.jpg);
+    background-image: url(../img/planos-5.jpg);
 }
 
 .home-botao2 {
@@ -278,4 +278,12 @@ header {
 
 .telefonefonte {
 	font-size: 22px;
+}
+
+.corbranca {
+	color: #FFF !important;
+}
+
+.container-fluid {
+	max-width: 1200px;
 }
