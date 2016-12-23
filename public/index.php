@@ -11,6 +11,9 @@
 
     <title>Porto Seguro Conecta - Arizona Seguros</title>
 
+    <!-- External Custom -->
+    <link href="css/external.css" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/icon/apple-icon-60x60.png">
@@ -100,7 +103,7 @@
             </div>
 
             <div class="home-itenstopo">
-                <i class="fa fa-phone" aria-hidden="true"></i> 11 2669-4602 &nbsp; <i class="fa fa-envelope" aria-hidden="true"></i> atendimento@faleilimitadobrasil.com &nbsp; <i class="fa fa-comments" aria-hidden="true"></i> Chat Online
+                <i class="fa fa-phone" aria-hidden="true"></i> 11 2669-4602 &nbsp; <i class="fa fa-envelope" aria-hidden="true"></i> atendimento@faleilimitadobrasil.com &nbsp; <a href="#" id="btencomendar"><i class="fa fa-comments" aria-hidden="true"></i> Chat Online</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -183,6 +186,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 text-center">
                                     <div class="divplanos">
+                                        <div class="recomendado">Recomendado</div>
                                         <p class="gigas gigas1">5 GB de Internet</p>
                                         <p>R$ <span class="reais reais1">129</span><span class="centavos1">,90</span>/mês</p>
                                         <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
@@ -225,6 +229,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 text-center">
                                     <div class="divplanos">
+                                        <div class="maisvendido">Mais Vendido</div>
                                         <p class="gigas gigas2">1 GB de Internet</p>
                                         <p>R$ <span class="reais reais2">99</span><span class="centavos2">,90</span>/mês</p>
                                         <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
@@ -298,7 +303,80 @@
         </div>
     </section>
 
+<div class="adv">
+    <div class="adv-default">
+        <div class="container">
+        <h2 class="section-heading text-center">Vantagens</h2>
+            <hr class="dark">
 
+            <div class="row">
+                <div class="col-md-7 noPadding noPaddingRight">
+                    <div class="adv-content adv-bg-blue">
+                        <h3 class="adv-insurance-title">
+                            <span class="ci-smartphoneInsurance"></span>
+                            Seguro celular
+                        </h3>
+                        <p>Caso alguma coisa aconteça com o aparelho, estamos aqui para rachar com você o custo do conserto ou mesmo da troca do seu fiel companheiro eletrônico de todos os dias e de todos os momentos.</p>
+                        <small>Clientes dos planos Conecta+ 5GB e 10GB<sup>1</sup> contam com o Seguro Celular sem qualquer custo adicional.</small>
+                    </div>
+
+                    <div class="adv-content adv-bg-green">
+                        <h3 class="adv-insurance-bs-title">Protegendo seu patrimônio, você <br class="visible-lg">também garante <strong>benefícios exclusivos<sup>1</sup></strong></h3>
+                        
+                        <div class="col-md-6 col-sm-6 adv-ss-description">
+                            <span class="ci-smartphoneLend"></span>
+                            <span><strong>Celular reserva</strong></span>
+                            Seu celular está na assistência técnica? <br><strong>Emprestamos um celular para você por até 30 dias</strong>.
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6 adv-ss-description">
+                            <span class="ci-portoboy"></span>
+                            <span><strong>Porto Boy</strong></span>
+                            Esqueceu o celular em casa? <br><strong>Nós buscamos e levamos até você.</strong>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 adv-bg-purple">
+                    <div class="adv-content">
+                        <h3 class="adv-insurance-bs-title">Se você <strong>pretende contratar ou <br class="visible-lg"> renovar o seguro do seu veículo:</strong></h3>
+
+                        <div class="adv-insurance-points">
+                            <div class="card">
+                                <h4 class="col-md-12 h3">Você ganha desconto no <br class="visible-lg"> <strong>Porto Seguro Auto</strong> na contratação de um plano pós-pago.</h4>
+                                <ul class="col-md-12 row advPlanPrice">
+                                    <li>
+                                        <div>5%</div>
+                                        Fazendo o seguro e contratando um pós-pago Conecta
+                                    </li>
+                                    <li>
+                                        <div class="setTotal">5%</div>
+                                        Pagando com o Cartão de Crédito Porto Seguro
+                                    </li>
+                                    <li>
+                                        <div class="setOff">10%</div>
+                                        <strong>De desconto no  <br class="visible-xs">Porto Seguro Auto</strong>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="card">
+                                <h4 class="col-md-12 h3">Você pode ter uma fatura grátis quando renovar o <strong>Porto Seguro Auto</strong>,<br class="visible-md"> <strong>Itaú Seguro Auto</strong> ou <br class="visible-lg visible-md"><strong>Azul Seguro Auto</strong>.</h4>
+                                <div class="col-md-12">
+                                    <div class="ico monthList">&nbsp;</div>
+                                    <p>Nos planos pós-pagos, você acumula mensalmente 10% do valor total da fatura Conecta paga. Ao contratar ou renovar o seguro do veículo com o <strong>Porto Seguro Auto</strong> ou <strong>Azul Seguro Auto</strong>, o valor acumulado volta para você como desconto na sua fatura.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <section id="services">
         <div class="container">
@@ -506,6 +584,14 @@
     <script type="text/javascript">
     $(document).ready(function() {
         $(".fancybox").fancybox();
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#btencomendar").click(function(){
+                $zopim.livechat.window.show();
+        });
     });
     </script>
 

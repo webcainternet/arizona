@@ -1,5 +1,5 @@
 .navbar {
-    min-height: 75px;
+    min-height: 100px;
 }
 
 @media (min-width: 768px) {
@@ -287,3 +287,95 @@ header {
 .container-fluid {
 	max-width: 1200px;
 }
+
+
+.recomendado {
+    background: #730651;
+    position: absolute;
+    padding: 5px 15px;
+    top: -15px;
+    right: 0px;
+    border-top-right-radius: 10px;
+    text-transform: uppercase;
+}
+
+.maisvendido {
+    background: #350025;
+    position: absolute;
+    padding: 5px 15px;
+    top: -15px;
+    right: 0px;
+    border-top-right-radius: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+.adv .adv-invoice {
+    margin-top: -150px;
+    padding-top: 228px;
+    padding-bottom: 70px;
+    color: #7f7a71;
+    background: #f8f8f6;
+}
+
+.adv .adv-invoice .ico-pointsInvoice {
+    display: block;
+    background: url(../img/pontos-dobro-cartao.svg) center center no-repeat;
+    width: 100px;
+    height: 112px;
+}
+
+.adv .adv-invoice .ci-culturalEvents, .adv .adv-invoice .ico-pointsInvoice {
+    position: absolute;
+    font-size: 112px;
+    vertical-align: middle;
+    margin-left: -130px;
+    margin-right: 44px;
+    color: #0f9bf2;
+}
+
+.adv .adv-invoice .ci-culturalEvents {
+    line-height: 85px;
+}
+
+.adv .adv-invoice .ci-culturalEvents, .adv .adv-invoice .ico-pointsInvoice {
+    position: absolute;
+    font-size: 112px;
+    vertical-align: middle;
+    margin-left: -130px;
+    margin-right: 44px;
+    color: #0f9bf2;
+}
+
+.adv .adv-default .adv-bg-blue {
+    font-size: 21px;
+    /*font-family: OxygenBold,sans-serif;*/
+    background: #0f9bf2;
+}
+
+.adv .adv-default .adv-bg-green {
+    background: #28845f;
+}
+
+.adv .adv-default .adv-content {
+    color: #fff;
+    padding: 42px 56px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.adv .adv-default .adv-bg-purple {
+    background: #4a3574;
+}
+
+.adv {
+	padding-top: 200px;
+}
+
+
+
+
+
+
