@@ -626,7 +626,7 @@
               width: 500,
               height: 60
             });
-        }
+        } 
     </script>
 </body>
 
