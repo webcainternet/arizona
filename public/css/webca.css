@@ -10,6 +10,22 @@
 }
 
 
+@media (max-width: 800px) {
+	.home-itenstopo {
+		display: none;
+	}
+}
+
+
+@media (max-width: 767px) {
+	section {
+	    margin-bottom: 0px;
+	}
+	.adv {
+	    padding-top: 25px !important;
+	}
+}
+
 
 
 
@@ -57,6 +73,9 @@
 	padding: 10px 0px 10px 0px;
 }
 
+.home-itenstopo a {
+	color: #333;
+}
 
 header {
     background-image: url(../img/planos-5.jpg);
@@ -151,7 +170,7 @@ header {
 }
 
 .divplanos p {
-	color: #444;
+	color: #444 !important;
 }
 .divplanos p span {
 	
@@ -290,23 +309,25 @@ header {
 
 
 .recomendado {
-    background: #730651;
+	background: #000;
     position: absolute;
-    padding: 5px 15px;
-    top: -15px;
-    right: 0px;
+    padding: 10px 15px;
+    top: -22px;
+    right: 14px;
     border-top-right-radius: 10px;
     text-transform: uppercase;
+    font-size: 17px;
 }
 
 .maisvendido {
-    background: #350025;
+	background: #000;
     position: absolute;
-    padding: 5px 15px;
-    top: -15px;
-    right: 0px;
+    padding: 10px 15px;
+    top: -22px;
+    right: 14px;
     border-top-right-radius: 10px;
     text-transform: uppercase;
+    font-size: 17px;
 }
 
 
@@ -379,3 +400,17 @@ header {
 
 
 
+
+@media (min-width: 768px), (min-width: 1205px), (min-width: 990px) {
+	.adv .adv-default .adv-bg-green {
+	    height: 540px;
+	}	
+}
+
+
+
+@media (min-width: 768px), (min-width: 1205px), (min-width: 990px) {
+	.adv .adv-default .adv-bg-purple {
+	    height: 995px;
+	}
+}

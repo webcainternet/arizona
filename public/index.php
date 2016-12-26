@@ -103,7 +103,7 @@
             </div>
 
             <div class="home-itenstopo">
-                <i class="fa fa-phone" aria-hidden="true"></i> 11 2669-4602 &nbsp; <i class="fa fa-envelope" aria-hidden="true"></i> atendimento@faleilimitadobrasil.com &nbsp; <a href="#" id="btencomendar"><i class="fa fa-comments" aria-hidden="true"></i> Chat Online</a>
+                <i class="fa fa-phone" aria-hidden="true"></i> 11 2669-4602 &nbsp; <a href="mailto:atendimento@faleilimitadobrasil.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> atendimento@faleilimitadobrasil.com</a> &nbsp; <a href="#" id="btencomendar"><i class="fa fa-comments" aria-hidden="true"></i> Chat Online</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -119,10 +119,10 @@
                         <a class="page-scroll" href="#page-top">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Planos</a>
+                        <a class="page-scroll" href="#about1">Planos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Vantagens</a>
+                        <a class="page-scroll" href="#vantagens">Vantagens</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Fale Conosco</a>
@@ -142,24 +142,34 @@
         <div class="header-content">
             <div class="header-content">
                 <div class="header-content-inner">
-                    <h1 id="homeHeading">
+                    <h1 id="homeHeading">Use seu celular com <br>muito mais tranquilidade!<br>&nbsp;</h1>
+                    <?php /* <h1 id="homeHeading">
                         Conecta+ com ligação local ilimitada<br>
                         Fale Ilimitado + 1 GB de Internet<br>
                         <p>R$ <span class="reais reais2" style="color: #FFF;">99</span><span class="centavos2" style="color: #FFF;">,90</span> <span style="text-transform: lowercase;">/mês</span></p>
-                    </h1>
-                    <hr>
+                    </h1> */ ?>
+
                     <div class="row">
                         <div class="col-lg-4 col-md-6 text-center">
-                            <div class="titulo1">Conecta+ <b>com ligação local e DDD ilimitado</b></div>
-                            <a href="#about1" class="page-scroll btn btn-default btn-xl sr-button  home-botao2">Ver planos</a>
+                            &nbsp;
                         </div>
                         <div class="col-lg-4 col-md-6 text-center">
-                            <div class="titulo1">Conecta+ <b>com ligação local ilimitada</b></div>
-                            <a href="#about2" class="page-scroll btn btn-default btn-xl sr-button  home-botao2">Ver planos</a>
+                            <div class="divplanos">
+                                <div class="recomendado">Recomendado</div>
+                                    <p class="gigas gigas1" style="font-size: 28px; margin-top: 10px; margin-bottom: 0px; color: #a1247a !important;">5 GB de Internet</p>
+                                    <p style="margin-bottom: 0px;">R$ <span class="reais reais1">129</span><span class="centavos1">,90</span>/mês</p>
+                                    <span style="color: #333;">Conecta+ com ligação local e DDD<br>ilimitado</span>
+                                    <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                </div>
                         </div>
                         <div class="col-lg-4 col-md-6 text-center">
-                            <div class="titulo1">Conecta<b>100<br>minutos</b></div>
-                            <a href="#about3" class="page-scroll btn btn-default btn-xl sr-button  home-botao2">Ver planos</a>
+                            <div class="divplanos">
+                                <div class="maisvendido">Mais Vendido</div>
+                                <p class="gigas gigas2" style="font-size: 28px; margin-top: 10px; margin-bottom: 0px; color: #a1247a !important;">1 GB de Internet</p>
+                                <p style="margin-bottom: 0px;">R$ <span class="reais reais2">99</span><span class="centavos2">,90</span>/mês</p>
+                                <span style="color: #333;">Conecta+ com ligação local<br>ilimitada</span>
+                                <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,13 +183,13 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Conecta+ com ligação local e DDD ilimitado</h2>
-                    <hr class="light">
+                    <hr class="light" style="margin-bottom: 30px;">
 
                     <div class="row">
                         <!-- Descrição -->
                         <div class="col-lg-4 col-md-6 text-left">
                             <p class="text-faded"><b>Fale ilimitado</b> com qualquer operadora móvel ou telefone fixo em ligações locais e DDD</p>
-                            <a href="#services" class="page-scroll btn btn-default btn-xl sr-button saibamais1">Detalhes do plano</a>
+                            <a href="detalhe1.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais1">Detalhes do plano</a>
                         </div>
                         <!-- Detalhes -->
                         <div class="col-lg-8 col-md-6 text-center">
@@ -216,13 +226,13 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Conecta+ com ligação local ilimitada</h2>
-                    <hr class="light">
+                    <hr class="light" style="margin-bottom: 30px;">
 
                     <div class="row">
                         <!-- Descrição -->
                         <div class="col-lg-4 col-md-6 text-left">
                             <p class="text-faded"><b>Fale ilimitado</b> com qualquer operadora móvel ou telefone fixo em ligações locais</p>
-                            <a href="#services" class="page-scroll btn btn-default btn-xl sr-button saibamais2">Detalhes do plano</a>
+                            <a href="detalhe2.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais2">Detalhes do plano</a>
                         </div>
                         <!-- Detalhes -->
                         <div class="col-lg-8 col-md-6 text-center">
@@ -262,7 +272,7 @@
                         <!-- Descrição -->
                         <div class="col-lg-4 col-md-6 text-left">
                             <p class="text-faded"><b>100 minutos</b> para você usar como quiser: Ligações para qualquer operadora móvel e fixo, em ligações locais, DDD e DDI para 15 países utilizando o 41.</p>
-                            <a href="#services" class="page-scroll btn btn-default btn-xl sr-button saibamais3">Detalhes do plano</a>
+                            <a href="detalhe3.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais3">Detalhes do plano</a>
                         </div>
                         <!-- Detalhes -->
                         <div class="col-lg-8 col-md-6 text-center">
@@ -303,7 +313,7 @@
         </div>
     </section>
 
-<div class="adv">
+<div class="adv"  id="vantagens">
     <div class="adv-default">
         <div class="container">
         <h2 class="section-heading text-center">Vantagens</h2>
@@ -382,25 +392,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Vantagens</h2>
+                    <h2 class="section-heading">Conecta <b>Center</b></h2>
                     <hr class="dark">
 
                     <div class="row">
-                        <!-- Descrição -->
+                        <!-- Descrição 
                         <div class="col-lg-4 col-md-6 text-right">
                             <p class="titulo-azul">Porto Seguro Conecta</p>
-                        </div>
+                        </div> -->
                         <!-- Detalhes -->
-
-                        <div class="col-lg-8 col-md-6 text-left">
+                        <div class="col-lg-12 col-md-6 text-left">
 
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-8">
 
-                                    <p>Conecta <b>Center</b></p>
                                     <p>Acompanhe o consumo do seu plano com um aplicativo simples e gratuito, exclusivo da Porto Seguro Conecta.</p>
                                     <div class="cc-store-buttons">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 text-right">
                                             <a href="https://play.google.com/store/apps/details?id=com.porto.conecta.center.mobile&amp;hl=pt_BR" target="_blank"><img src="img/google-play.png" alt="Baixe no Google Play"></a>
                                         </div>
                                         <div class="col-md-6">
@@ -413,7 +421,7 @@
                                     Conecta Center é o aplicativo exclusivo para os clientes Porto Seguro Conecta acompanharem seu consumo de minutos, SMS e internet na tela do seu smartphone Android ou IPhone. O novo Conecta Center traz mais facilidade para você, acompanhe as funções como: Fatura, Chat, Pacotes entre outros.</p>
                                 </div>
 
-                                <div class="col-md-6 text-right">
+                                <div class="col-md-4 text-right">
                                     <img src="img/hand-cc.png">
                                 </div>
 
@@ -446,7 +454,7 @@
             <div class="call-to-action">
                 <h2>Fale Conosco</h2>
                 <hr class="light">
-                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                <p>Precisa de ajuda ou quer nos deixar alguma mensagem? Preencha o formulário abaixo e deixe seu contato!</p>
                 <div class="row">
                     <div class="col-md-6" style="padding-right: 0px;">
                         <input type="text" name="nome" placeholder="Digite seu nome">
@@ -493,7 +501,7 @@
                     
                         <img class="logo" src="img/logoConecta.site.png" height="40">
                         <br>&nbsp;<br>
-                        <img class="logo logoArizona" src="img/logoArizona.png" height="63">
+                        <a href="http://arizonaseguros.com.br/" target="_blank"><img class="logo logoArizona" src="img/logoArizona.png" height="63"></a>
                     
                 </div>
                 <div class="col-lg-2 text-left">
@@ -583,7 +591,9 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        $(".fancybox").fancybox();
+        $(".fancybox").fancybox({
+            minWidth:1000
+        });
     });
     </script>
 
@@ -595,6 +605,27 @@
     });
     </script>
 
+    <script type="text/javascript">
+        function not1(){
+            notif({
+                msg: "&lt;b&gt;Success:&lt;/b&gt; In 5 seconds i'll be gone",
+                type: "success"
+            });
+        }
+    </script>
+
+    <script src="js/notifIt.js" type="text/javascript"></script>
+    <link href="css/notifIt.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript">
+        notif({
+          type: "success",
+          msg: "This error will stay here until you click it.",
+          position: "center",
+          width: 500,
+          height: 60
+        });
+    </script>
 </body>
 
 </html>
