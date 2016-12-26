@@ -607,18 +607,6 @@
 
     <script src="js/notifIt.js" type="text/javascript"></script>
     <link href="css/notifIt.css" type="text/css" rel="stylesheet">
-
-    <script type="text/javascript">
-        function enviamensagem() {
-            notif({
-              type: "success",
-              msg: "This error will stay here until you click it.",
-              position: "center",
-              width: 500,
-              height: 60
-            });
-        } 
-    </script>
 </body>
 
 </html>
