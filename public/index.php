@@ -142,7 +142,7 @@
         <div class="header-content">
             <div class="header-content">
                 <div class="header-content-inner">
-                    <h1 id="homeHeading">Use seu celular com <br>muito mais tranquilidade!<br>&nbsp;</h1>
+                    <h1 id="homeHeading" style="font-size: 36px;">Peça agora mesmo seu chip de celular sem carência, e comece a falar ilimitado<br>&nbsp;</h1>
                     <?php /* <h1 id="homeHeading">
                         Conecta+ com ligação local ilimitada<br>
                         Fale Ilimitado + 1 GB de Internet<br>
@@ -404,7 +404,7 @@
                         <div class="col-lg-12 col-md-6 text-left">
 
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-8" style="text-align: justify;">
 
                                     <p>Acompanhe o consumo do seu plano com um aplicativo simples e gratuito, exclusivo da Porto Seguro Conecta.</p>
                                     <div class="cc-store-buttons">
@@ -469,7 +469,7 @@
                     </div>
 
                     <p class="text-right" style="margin-right: 10px;">
-                        <a href="#services" class="page-scroll btn btn-default btn-xl sr-button contato" data-sr-id="10" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: all 0.35s ease 0s, -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: all 0.35s ease 0s, transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">Detalhes do plano</a>
+                        <a href="#services" class="page-scroll btn btn-default btn-xl sr-button contato" data-sr-id="10" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: all 0.35s ease 0s, -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: all 0.35s ease 0s, transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">Enviar</a>
                     </p>
                 </div>
             </div>
@@ -510,10 +510,10 @@
                         <a class="page-scroll" href="#page-top">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Planos</a>
+                        <a class="page-scroll" href="#about1">Planos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Vantagens</a>
+                        <a class="page-scroll" href="#vantagens">Vantagens</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Fale Conosco</a>
@@ -534,9 +534,11 @@
                 </div>
                 <div class="col-lg-3 text-left">
                     <ul class="sem-bullet telefonefonte">
-                        <li>WhatsApp</li>
-                        <li><i class="fa fa-whatsapp" aria-hidden="true"></i> 11 99195-9622</li>
-                        <li><i class="fa fa-whatsapp" aria-hidden="true"></i> 11 99622-1080</li>
+                        <li>Atendimento</li>
+                        <li><span style="font-size: 14px;"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</span></li>
+                        <li><span style="font-size: 14px;">11 99195-9622 / 11 99622-1080</li>
+                        <li><span style="font-size: 14px;"><i class="fa fa-envelope" aria-hidden="true"></i> E-Mail</span></li>
+                        <li><span style="font-size: 14px;">atendimento@faleilimitadobrasil.com</li>
                     </ul>
                 </div>
 
@@ -550,7 +552,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-left">
-                    © 2016 Porto Seguro Conecta - Todos os direitos reservados 21.552.804/0001-73
+                    © <?php echo date("Y"); ?> Porto Seguro Conecta - Arizona Seguros CNPJ: 21.552.804/0001-73 - Todos os direitos reservados
                 </div>
             </div>
         </div>
