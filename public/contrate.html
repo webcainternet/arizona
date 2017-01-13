@@ -94,7 +94,11 @@
             });
 
             $('#slplano').on('change', function() {
-              alert('dwdwd');
+                if ($('#slplano').val() == 'Itaú - Débito em conta corrente') {
+                    $("#dvplano").fadeIn(1000);
+                } else {
+                    $("#dvplano").fadeOut(100);
+                }
             })
 
         });
@@ -133,7 +137,8 @@
                             <span class="text1">Qual plano você deseja?</span>
                         </div>
                         <div class="col-lg-9 text-left">
-                            <select id="slplano" name="slplano">
+                            <select>
+                                <option>-- Selecione --</option>
                                 <option>Conecta+ com ligação local e DDD ilimitado - 5 GB de Internet - R$ 129,90/mês</option>
                                 <option>Conecta+ com ligação local e DDD ilimitado - 10 GB de Internet - R$ 199,90/mês</option>
                                 <option>Conecta+ com ligação local ilimitada - 1 GB de Internet - R$ 99,90/mês</option>
@@ -218,7 +223,7 @@
                             <span class="text1">Forma de pagamento</span>
                         </div>
                         <div class="col-lg-9 text-left">
-                            <select>
+                            <select id="slplano" name="slplano">
                                 <option>-- Selecione --</option>
                                 <option>Itaú - Débito em conta corrente</option>
                                 <option>Bradesco - Débito em conta corrente</option>
@@ -227,7 +232,7 @@
                                 <option>Cartão de Crédito Porto Seguro</option>
                             </select>
 
-                            <div class="invisivel">
+                            <div class="invisivel" id="dvplano" name="dvplano">
                                 <div style="margin: 15px;">Digite as informações para débito em conta corrente:</div>
 
                                 <div class="row">
