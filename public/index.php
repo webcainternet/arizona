@@ -103,7 +103,7 @@
             </div>
 
             <div class="home-itenstopo">
-                <i class="fa fa-phone" aria-hidden="true"></i> 11 2669-4602 &nbsp; <a href="mailto:atendimento@faleilimitadobrasil.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> atendimento@faleilimitadobrasil.com</a> &nbsp; <a href="#" id="btencomendar"><i class="fa fa-comments" aria-hidden="true"></i> Chat Online</a>
+                <i class="fa fa-phone" aria-hidden="true"></i> 11 2669-4602 &nbsp; <i class="fa fa-envelope" aria-hidden="true"></i> atendimento@faleilimitadobrasil.com &nbsp; <a href="#" id="btencomendar"><i class="fa fa-comments" aria-hidden="true"></i> Chat Online</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -188,7 +188,7 @@
                     <div class="row">
                         <!-- Descrição -->
                         <div class="col-lg-4 col-md-6 text-left">
-                            <p class="text-faded"><b>Fale ilimitado</b> com qualquer operadora móvel ou telefone fixo em ligações locais e DDD</p>
+                            <p class="text-faded"><b>Fale ilimitado<sup>1</sup></b> com qualquer operadora móvel ou telefone fixo em ligações locais e DDD</p>
                             <a href="detalhe1.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais1">Detalhes do plano</a>
                         </div>
                         <!-- Detalhes -->
@@ -231,7 +231,7 @@
                     <div class="row">
                         <!-- Descrição -->
                         <div class="col-lg-4 col-md-6 text-left">
-                            <p class="text-faded"><b>Fale ilimitado</b> com qualquer operadora móvel ou telefone fixo em ligações locais</p>
+                            <p class="text-faded"><b>Fale ilimitado<sup>1</sup></b> com qualquer operadora móvel ou telefone fixo em ligações locais</p>
                             <a href="detalhe2.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais2">Detalhes do plano</a>
                         </div>
                         <!-- Detalhes -->
@@ -327,11 +327,11 @@
                             Seguro celular
                         </h3>
                         <p>Caso alguma coisa aconteça com o aparelho, estamos aqui para rachar com você o custo do conserto ou mesmo da troca do seu fiel companheiro eletrônico de todos os dias e de todos os momentos.</p>
-                        <small>Clientes dos planos Conecta+ 5GB e 10GB<sup>1</sup> contam com o Seguro Celular sem qualquer custo adicional.</small>
+                        <small>Clientes dos planos Conecta+ 5GB e 10GB<sup>2</sup> contam com o Seguro Celular sem qualquer custo adicional.</small>
                     </div>
 
                     <div class="adv-content adv-bg-green">
-                        <h3 class="adv-insurance-bs-title">Protegendo seu patrimônio, você <br class="visible-lg">também garante <strong>benefícios exclusivos<sup>1</sup></strong></h3>
+                        <h3 class="adv-insurance-bs-title">Protegendo seu patrimônio, você <br class="visible-lg">também garante <strong>benefícios exclusivos<sup>2</sup></strong></h3>
                         
                         <div class="col-md-6 col-sm-6 adv-ss-description">
                             <span class="ci-smartphoneLend"></span>
@@ -483,12 +483,6 @@
                     <p>1 ILIMITADO: Sem franquia de minutos ou de SMS. Promoção exclusiva para uso pessoal e não comercial. DDD ilimitado apenas para planos Conecta +5 e +10, para ligações feitas sem indicação de código da operadora. Condições válidas durante a vigência da Promoção (Os benefícios são válidos somente até a data de término da promoção 31/12/2016). Confira o Regulamento.</p>
 
                     <p>2 Os serviços Porto Boy e Empréstimo de Aparelho estão disponíveis a partir do pagamento da 2ª fatura Conecta. Seguro de celular é valido após pagamento da 1ª fatura. Esses benefícios são exclusivos para clientes Conecta+ 5GB e 10GB que possuam Porto Seguro Auto, Cartão de Crédito Porto Seguro, Residencial, Equipamentos Portáteis, Empresarial e Máquinas e Equipamentos, Azul Seguro Auto, Itaú Seguro Auto.</p>
-
-                    <p>3 Países incluídos nas ligações internacionais: Alemanha, Argentina, Canadá, Chile, China, Colômbia, Espanha, Estados Unidos, França, Itália, Japão, México, Paraguai, Portugal, Reino Unido.</p>
-
-                    <p>Formas de pagamento da fatura: débito automático no Cartão de Crédito Porto Seguro, débito em conta dos bancos conveniados (Bradesco, HSBC, Itaú e Santander) e boleto pagável nos bancos conveniados (Banco do Brasil, Bradesco, HSBC, Santander e Itaú).</p>
-
-                    <p>Ofertas válidas até o término do mês de novembro de 2016 ou até o final do estoque.</p>
                 </div>
             </div>
         </div>
@@ -552,7 +546,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-left">
-                    © <?php echo date("Y"); ?> Porto Seguro Conecta - Arizona Seguros CNPJ: 21.552.804/0001-73 - Todos os direitos reservados
+                    © <?php echo date("Y"); ?> Arizona Seguros CNPJ: 21.552.804/0001-73 - Todos os direitos reservados
                 </div>
             </div>
         </div>
