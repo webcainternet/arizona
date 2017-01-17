@@ -110,7 +110,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="navbar-right sem-bullet">
                     <li>
-                        <a href="contrate.html" class="fancybox fancybox.iframe btn btn-primary btn-xl page-scroll home-botao">Contrate Online</a>
+                        <a href="contrate.php" class="fancybox fancybox.iframe btn btn-primary btn-xl page-scroll home-botao">Contrate Online</a>
                     </li>
                     
                 </ul>

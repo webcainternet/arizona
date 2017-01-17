@@ -120,6 +120,7 @@
         $(document).ready(function(){
             $("#telefone_residencial").mask("(99) 9999-9999?9");
             $("#telefone_celular").mask("(99) 9999-9999?9");
+            $("#numero_da_portabilidade").mask("(99) 9999-9999?9");
         });
 
     </script>
