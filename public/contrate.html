@@ -13,6 +13,7 @@
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="/js/jquery.maskedinput.min.js"></script>   
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -55,6 +56,18 @@
             padding: 10px;
             width: 100%;
         }
+        input[type=submit] {
+            color: #0f9bf2;
+            background: #ffffff;
+            padding: 14px 40px;
+            text-transform: uppercase;
+            border: 0px;
+            border-radius: 25px;
+            font-family: OxygenBold,sans-serif;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-shadow: none;
+        }
         select {
             background-color: #0f9bf2;
             border: solid 2px #FFF;
@@ -72,6 +85,7 @@
         .invisivel {
             display: none;
         }
+        textarea { color: #333; }
     </style>
 
     <script type="text/javascript">
@@ -94,7 +108,7 @@
             });
 
             $('#slplano').on('change', function() {
-                if ($('#slplano').val() == 'Itaú - Débito em conta corrente') {
+                if ( $('#slplano').val() == 'Itaú - Débito em conta corrente' || $('#slplano').val() == 'Bradesco - Débito em conta corrente' || $('#slplano').val() == 'Santander - Débito em conta corrente' ) {
                     $("#dvplano").fadeIn(1000);
                 } else {
                     $("#dvplano").fadeOut(100);
@@ -102,398 +116,415 @@
             })
 
         });
+
+        $(document).ready(function(){
+            $("#telefone_residencial").mask("(99) 9999-9999?9");
+            $("#telefone_celular").mask("(99) 9999-9999?9");
+        });
+
     </script>
 </head>
 
 <body class="">
-	
+    <form method="post" action="envia.php">
 
-    <!-- Planos -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Informações do plano</h2>
-                    <hr class="light">
+        <!-- Planos -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Informações do plano</h2>
+                        <hr class="light">
 
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Selecione seu DDD</span>
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Selecione seu DDD</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <select>
+                                    <option>-- Selecione --</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>19</option>
+                                    <option>21</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-lg-9 text-left">
-                            <select>
-                                <option>-- Selecione --</option>
-                                <option>11</option>
-                                <option>12</option>
-                                <option>13</option>
-                                <option>19</option>
-                                <option>21</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Qual plano você deseja?</span>
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Qual plano você deseja?</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <select>
+                                    <option>-- Selecione --</option>
+                                    <option>Conecta+ com ligação local e DDD ilimitado - 5 GB de Internet - R$ 129,90/mês</option>
+                                    <option>Conecta+ com ligação local e DDD ilimitado - 10 GB de Internet - R$ 199,90/mês</option>
+                                    <option>Conecta+ com ligação local ilimitada - 1 GB de Internet - R$ 99,90/mês</option>
+                                    <option>Conecta+ com ligação local ilimitada - 2 GB de Internet - R$ 109,90/mês</option>
+                                    <option>Conecta100 - 1 GB de Internet - R$ 59,90/mês</option>
+                                    <option>Conecta100 - 2 GB de Internet - R$ 69,80/mês</option>
+                                    <option>Conecta100 - 4 GB de Internet - R$ 84,80/mês</option>
+                                    <option>Conecta100 - 11 GB de Internet - R$ 159,80/mês</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-lg-9 text-left">
-                            <select>
-                                <option>-- Selecione --</option>
-                                <option>Conecta+ com ligação local e DDD ilimitado - 5 GB de Internet - R$ 129,90/mês</option>
-                                <option>Conecta+ com ligação local e DDD ilimitado - 10 GB de Internet - R$ 199,90/mês</option>
-                                <option>Conecta+ com ligação local ilimitada - 1 GB de Internet - R$ 99,90/mês</option>
-                                <option>Conecta+ com ligação local ilimitada - 2 GB de Internet - R$ 109,90/mês</option>
-                                <option>Conecta100 - 1 GB de Internet - R$ 59,90/mês</option>
-                                <option>Conecta100 - 2 GB de Internet - R$ 69,80/mês</option>
-                                <option>Conecta100 - 4 GB de Internet - R$ 84,80/mês</option>
-                                <option>Conecta100 - 11 GB de Internet - R$ 159,80/mês</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            &nbsp;
-                        </div>
-                        <div class="col-lg-9 text-left" style="margin-bottom: 10px;">
-                            <input type="checkbox" id="ckportabilidade" name="ckportabilidade"> <span class="text1">Quero fazer uma portabilidade?</span>
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                &nbsp;
+                            </div>
+                            <div class="col-lg-9 text-left" style="margin-bottom: 10px;">
+                                <input type="checkbox" id="ckportabilidade" name="ckportabilidade"> <span class="text1">Quero fazer uma portabilidade?</span>
 
-                            <div style="margin-top: 10px;" class="invisivel" id="dvportabilidade" name="dvportabilidade">
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">De qual número?</span>
+                                <div style="margin-top: 10px;" class="invisivel" id="dvportabilidade" name="dvportabilidade">
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">De qual número?</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="numero_da_portabilidade">
+                                        </div>
                                     </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
-                                    </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">Operadora atual?</span>
-                                    </div>
-                                    <div class="col-lg-9 text-left">
-                                        <select>
-                                            <option>-- Selecione --</option>
-                                            <option>Claro</option>
-                                            <option>Vivo</option>
-                                            <option>Oi</option>
-                                            <option>Nextel</option>
-                                            <option>Tim</option>
-                                        </select>
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">Operadora atual?</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <select name="operadora_atual">
+                                                <option>-- Selecione --</option>
+                                                <option>Claro</option>
+                                                <option>Vivo</option>
+                                                <option>Oi</option>
+                                                <option>Nextel</option>
+                                                <option>Tim</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    
+                        
 
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Tipo de Fatura</span>
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Tipo de Fatura</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <select name="tipo_de_fatura">
+                                    <option>-- Selecione --</option>
+                                    <option>Eletrônica - detalhada - por e-mail</option>
+                                    <option>Impressa - resumida - por correio</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-lg-9 text-left">
-                            <select>
-                                <option>-- Selecione --</option>
-                                <option>Eletrônica - detalhada - por e-mail</option>
-                                <option>Impressa - resumida - por correio</option>
-                            </select>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Data de vencimento</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <select name="data_de_vencimento">
+                                    <option>-- Selecione --</option>
+                                    <option>Dia 1</option>
+                                    <option>Dia 6</option>
+                                    <option>Dia 10</option>
+                                    <option>Dia 16</option>
+                                    <option>Dia 22</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Data de vencimento</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <select>
-                                <option>-- Selecione --</option>
-                                <option>Dia 1</option>
-                                <option>Dia 6</option>
-                                <option>Dia 10</option>
-                                <option>Dia 16</option>
-                                <option>Dia 22</option>
-                            </select>
-                        </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Forma de pagamento</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <select id="slplano" name="slplano">
+                                    <option>-- Selecione --</option>
+                                    <option>Itaú - Débito em conta corrente</option>
+                                    <option>Bradesco - Débito em conta corrente</option>
+                                    <option>Santander - Débito em conta corrente</option>
+                                    <option>Boleto Bancário</option>
+                                    <option>Cartão de Crédito Porto Seguro</option>
+                                </select>
 
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Forma de pagamento</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <select id="slplano" name="slplano">
-                                <option>-- Selecione --</option>
-                                <option>Itaú - Débito em conta corrente</option>
-                                <option>Bradesco - Débito em conta corrente</option>
-                                <option>Santander - Débito em conta corrente</option>
-                                <option>Boleto Bancário</option>
-                                <option>Cartão de Crédito Porto Seguro</option>
-                            </select>
+                                <div class="invisivel" id="dvplano" name="dvplano">
+                                    <div style="margin: 15px;">Digite as informações para débito em conta corrente:</div>
 
-                            <div class="invisivel" id="dvplano" name="dvplano">
-                                <div style="margin: 15px;">Digite as informações para débito em conta corrente:</div>
-
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">Agência</span>
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">Agência</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="agencia">
+                                        </div>
                                     </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
-                                    </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">Conta Corrente</span>
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">Conta Corrente</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="conta_corrente">
+                                        </div>
                                     </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
-                                    </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">Dígito</span>
-                                    </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">Dígito</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="digito">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <h2 style="margin-top: 60px;" class="section-heading">Informações pessoais</h2>
-                    <hr class="light">
-
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Nome completo</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Sexo</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Data de Nascimento</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">CPF</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">RG</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Nome da mãe</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">E-mail</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Telefones residencial/comercial</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Telefones celular</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <h2 style="margin-top: 60px;" class="section-heading">Endereço</h2>
-                    <hr class="light">
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Endereço</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Número</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Complemento</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Cidade</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Estado</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">CEP</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="text" name="">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            &nbsp;
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <input type="checkbox" id="ckendchip" name="ckendchip"> <span class="text1">Utilizar outro endereço para entrega do chip?</span>
+                        <h2 style="margin-top: 60px;" class="section-heading">Informações pessoais</h2>
+                        <hr class="light">
 
 
-                            <div class="invisivel" id="dvendchip" name="dvendchip">
-                                <div style="margin: 15px;">Digite as informações de endereço referente a entrega do CHIP:</div>
-
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">Endereço</span>
-                                    </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">Número</span>
-                                    </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">Complemento</span>
-                                    </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">Cidade</span>
-                                    </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">Estado</span>
-                                    </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-3 text-right">
-                                        <span class="text1">CEP</span>
-                                    </div>
-                                    <div class="col-lg-9 text-left">
-                                        <input type="text" name="">
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Nome completo</span>
                             </div>
-
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="nome_completo">
+                            </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Sexo</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <select>
+                                    <option>-- Selecione --</option>
+                                    <option>Feminino</option>
+                                    <option>Masculino</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Data de Nascimento</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="data_de_nascimento">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">CPF</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="cpf">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">RG</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="rg">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Nome da mãe</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="nome_da_mae">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">E-mail</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Telefones residencial/comercial</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="telefone_residencial" id="telefone_residencial">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Telefones celular</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="telefone_celular" id="telefone_celular">
+                            </div>
+                        </div>
+
+                        <h2 style="margin-top: 60px;" class="section-heading">Endereço</h2>
+                        <hr class="light">
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Endereço</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="endereco">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Número</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="endereco_numero">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Complemento</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="endereco_complemento">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Cidade</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="endereco_cidade">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Estado</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="endereco_estado">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">CEP</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="text" name="endereco_cep">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                &nbsp;
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <input type="checkbox" id="ckendchip" name="ckendchip"> <span class="text1">Utilizar outro endereço para entrega do chip?</span>
+
+
+                                <div class="invisivel" id="dvendchip" name="dvendchip">
+                                    <div style="margin: 15px;">Digite as informações de endereço referente a entrega do CHIP:</div>
+
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">Endereço</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="endereco_entrega">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">Número</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="endereco_entrega_numero">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">Complemento</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="endereco_entrega_complemento">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">Cidade</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="endereco_entrega_cidade">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">Estado</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="endereco_entrega_estado">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-3 text-right">
+                                            <span class="text1">CEP</span>
+                                        </div>
+                                        <div class="col-lg-9 text-left">
+                                            <input type="text" name="endereco_entrega_cep">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h2 style="margin-top: 60px;" class="section-heading">Observações adicionais</h2>
+                        <hr class="light">
+
+
+                        <div class="row">
+                            <div class="col-lg-3 text-right">
+                                <span class="text1">Algo a acrescentar?</span>
+                            </div>
+                            <div class="col-lg-9 text-left">
+                                <textarea rows="5" style="width: 100%;" name="observacoes"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 text-right">
+                                <input type="submit" name="enviar" value="Enviar">
+                            </div>
+                        </div>
+
                     </div>
-
-                    <h2 style="margin-top: 60px;" class="section-heading">Observações adicionais</h2>
-                    <hr class="light">
-
-
-                    <div class="row">
-                        <div class="col-lg-3 text-right">
-                            <span class="text1">Algo a acrescentar?</span>
-                        </div>
-                        <div class="col-lg-9 text-left">
-                            <textarea rows="5" style="width: 100%;"></textarea>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+    </form>
 
 </body>
 
