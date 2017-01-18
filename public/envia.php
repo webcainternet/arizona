@@ -102,12 +102,12 @@
 		//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 		$mail->isSMTP();                                      // Set mailer to use SMTP
-		$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+		$mail->Host = 'smtp-pulse.com';  // Specify main and backup SMTP servers
 		$mail->SMTPAuth = true;                               // Enable SMTP authentication
 		$mail->Username = 'fernando.mendes@webca.com.br';                 // SMTP username
-		$mail->Password = 'lV1rtFm3%1';                           // SMTP password
-		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-		$mail->Port = 587;                                    // TCP port to connect to
+		$mail->Password = 'TMdStLMKQ2q';                           // SMTP password
+		$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+		$mail->Port = 465;                                    // TCP port to connect to
 
 		/* $mail->smtpConnect(array(
 			        "ssl" => array(
@@ -118,7 +118,7 @@
 			    )
 			); */
 
-		$mail->setFrom('fernando.mendes@lojavirtual.digital', 'Fernando de Figueiredo Mendes');
+		$mail->setFrom('atendimento@faleilimitadobrasil.com', 'Formulário');
 		$mail->addAddress('fernando.mendes@webca.com.br');     // Add a recipient
 		$mail->addAddress('sergio.delamare@arizonaseguros.com.br');     // Add a recipient
 		$mail->addAddress('andre.lazoski@arizonaseguros.com.br');     // Add a recipient

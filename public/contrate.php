@@ -185,7 +185,7 @@
                                             <span class="text1">De qual número?</span>
                                         </div>
                                         <div class="col-lg-9 text-left">
-                                            <input type="text" name="numero_da_portabilidade">
+                                            <input type="text" name="numero_da_portabilidade" id="numero_da_portabilidade">
                                         </div>
                                     </div>
 
