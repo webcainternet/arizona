@@ -159,7 +159,7 @@
                                     <p class="gigas gigas1" style="font-size: 28px; margin-top: 10px; margin-bottom: 0px; color: #a1247a !important;">5 GB de Internet</p>
                                     <p style="margin-bottom: 0px;">R$ <span class="reais reais1">129</span><span class="centavos1">,90</span>/mês</p>
                                     <span style="color: #333;">Conecta+ com ligação local e DDD<br>ilimitado</span>
-                                    <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                    <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                                 </div>
                         </div>
                         <div class="col-lg-4 col-md-6 text-center">
@@ -168,7 +168,7 @@
                                 <p class="gigas gigas2" style="font-size: 28px; margin-top: 10px; margin-bottom: 0px; color: #a1247a !important;">1 GB de Internet</p>
                                 <p style="margin-bottom: 0px;">R$ <span class="reais reais2">99</span><span class="centavos2">,90</span>/mês</p>
                                 <span style="color: #333;">Conecta+ com ligação local<br>ilimitada</span>
-                                <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                             </div>
                         </div>
                     </div>
@@ -199,14 +199,14 @@
                                         <div class="recomendado">Recomendado</div>
                                         <p class="gigas gigas1">5 GB de Internet</p>
                                         <p>R$ <span class="reais reais1">129</span><span class="centavos1">,90</span>/mês</p>
-                                        <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                        <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 text-center">
                                     <div class="divplanos">
                                         <p class="gigas gigas1">10 GB de Internet</p>
                                         <p>R$ <span class="reais reais1">199</span><span class="centavos1">,90</span>/mês</p>
-                                        <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                        <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                                     </div>
                                 </div>
                             </div>
@@ -242,14 +242,14 @@
                                         <div class="maisvendido">Mais Vendido</div>
                                         <p class="gigas gigas2">1 GB de Internet</p>
                                         <p>R$ <span class="reais reais2">99</span><span class="centavos2">,90</span>/mês</p>
-                                        <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                        <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 text-center">
                                     <div class="divplanos">
                                         <p class="gigas gigas2">2 GB de Internet</p>
                                         <p>R$ <span class="reais reais2">109</span><span class="centavos2">,90</span>/mês</p>
-                                        <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                        <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                                     </div>
                                 </div>
                             </div>
@@ -281,28 +281,28 @@
                                     <div class="divplanos">
                                         <p class="gigas gigas3">1 GB de Internet</p>
                                         <p>R$ <span class="reais reais3">59</span><span class="centavos3">,90</span>/mês</p>
-                                        <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                        <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 text-center">
                                     <div class="divplanos">
                                         <p class="gigas gigas3">2 GB de Internet</p>
                                         <p>R$ <span class="reais reais3">69</span><span class="centavos3">,80</span>/mês</p>
-                                        <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                        <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 text-center">
                                     <div class="divplanos">
                                         <p class="gigas gigas3">4 GB de Internet</p>
                                         <p>R$ <span class="reais reais3">84</span><span class="centavos3">,80</span>/mês</p>
-                                        <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                        <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 text-center">
                                     <div class="divplanos">
                                         <p class="gigas gigas3">11 GB de Internet</p>
                                         <p>R$ <span class="reais reais3">159</span><span class="centavos3">,80</span>/mês</p>
-                                        <a href="contrate.html" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
+                                        <a href="contrate.php" class="fancybox fancybox.iframe page-scroll btn btn-default btn-xl sr-button saibamais-azul">Contrate já</a>
                                     </div>
                                 </div>
                             </div>
