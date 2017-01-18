@@ -142,7 +142,7 @@
                                 <span class="text1">Selecione seu DDD</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <select>
+                                <select name="ddd">
                                     <option>-- Selecione --</option>
                                     <option>11</option>
                                     <option>12</option>
@@ -158,7 +158,7 @@
                                 <span class="text1">Qual plano você deseja?</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <select>
+                                <select name="plano">
                                     <option>-- Selecione --</option>
                                     <option>Conecta+ com ligação local e DDD ilimitado - 5 GB de Internet - R$ 129,90/mês</option>
                                     <option>Conecta+ com ligação local e DDD ilimitado - 10 GB de Internet - R$ 199,90/mês</option>
@@ -304,7 +304,7 @@
                                 <span class="text1">Sexo</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <select>
+                                <select name="sexo">
                                     <option>-- Selecione --</option>
                                     <option>Feminino</option>
                                     <option>Masculino</option>
