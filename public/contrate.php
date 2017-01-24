@@ -86,6 +86,26 @@
             display: none;
         }
         textarea { color: #333; }
+
+        
+
+        input[type=button] {
+            color: #0f9bf2;
+            background: #ffffff;
+            padding: 14px 40px;
+            text-transform: uppercase;
+            border: 0px;
+            border-radius: 25px;
+            font-family: OxygenBold,sans-serif;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-shadow: none;
+        }
+
+        #enviarcontrate {
+            width: 140px;
+            text-align: center;
+        }
     </style>
 
     <script type="text/javascript">
@@ -139,7 +159,7 @@
 </head>
 
 <body class="">
-    <form method="post" action="envia.php">
+    <form method="post" action="envia.php" name="frmcontrate" id="frmcontrate">
 
         <!-- Planos -->
         <section>
@@ -154,7 +174,7 @@
                                 <span class="text1">Selecione seu DDD</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <select name="ddd">
+                                <select name="ddd" id="ddd">
                                     <option>-- Selecione --</option>
                                     <option>11</option>
                                     <option>12</option>
@@ -170,7 +190,7 @@
                                 <span class="text1">Qual plano você deseja?</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <select name="plano">
+                                <select name="plano" id="plano">
                                     <option>-- Selecione --</option>
                                     <option>Conecta+ com ligação local e DDD ilimitado - 5 GB de Internet - R$ 129,90/mês</option>
                                     <option>Conecta+ com ligação local e DDD ilimitado - 10 GB de Internet - R$ 199,90/mês</option>
@@ -206,7 +226,7 @@
                                             <span class="text1">Operadora atual?</span>
                                         </div>
                                         <div class="col-lg-9 text-left">
-                                            <select name="operadora_atual">
+                                            <select name="operadora_atual" id="operadora_atual">
                                                 <option>-- Selecione --</option>
                                                 <option>Claro</option>
                                                 <option>Vivo</option>
@@ -227,7 +247,7 @@
                                 <span class="text1">Tipo de Fatura</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <select name="tipo_de_fatura">
+                                <select name="tipo_de_fatura" id="tipo_de_fatura">
                                     <option>-- Selecione --</option>
                                     <option>Eletrônica - detalhada - por e-mail</option>
                                     <option>Impressa - resumida - por correio</option>
@@ -240,7 +260,7 @@
                                 <span class="text1">Data de vencimento</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <select name="data_de_vencimento">
+                                <select name="data_de_vencimento" id="data_de_vencimento">
                                     <option>-- Selecione --</option>
                                     <option>Dia 1</option>
                                     <option>Dia 6</option>
@@ -273,7 +293,7 @@
                                             <span class="text1">Agência</span>
                                         </div>
                                         <div class="col-lg-9 text-left">
-                                            <input type="text" name="agencia">
+                                            <input type="text" name="agencia" id="agencia">
                                         </div>
                                     </div>
 
@@ -282,7 +302,7 @@
                                             <span class="text1">Conta Corrente</span>
                                         </div>
                                         <div class="col-lg-9 text-left">
-                                            <input type="text" name="conta_corrente">
+                                            <input type="text" name="conta_corrente" id="conta_corrente">
                                         </div>
                                     </div>
 
@@ -291,7 +311,7 @@
                                             <span class="text1">Dígito</span>
                                         </div>
                                         <div class="col-lg-9 text-left">
-                                            <input type="text" name="digito">
+                                            <input type="text" name="digito" id="digito">
                                         </div>
                                     </div>
                                 </div>
@@ -307,7 +327,7 @@
                                 <span class="text1">Nome completo</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="nome_completo">
+                                <input type="text" name="nome_completo" id="nome_completo">
                             </div>
                         </div>
 
@@ -316,7 +336,7 @@
                                 <span class="text1">Sexo</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <select name="sexo">
+                                <select name="sexo" id="sexo">
                                     <option>-- Selecione --</option>
                                     <option>Feminino</option>
                                     <option>Masculino</option>
@@ -347,7 +367,7 @@
                                 <span class="text1">RG</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="rg">
+                                <input type="text" name="rg" id="rg">
                             </div>
                         </div>
 
@@ -356,7 +376,7 @@
                                 <span class="text1">Nome da mãe</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="nome_da_mae">
+                                <input type="text" name="nome_da_mae" id="nome_da_mae">
                             </div>
                         </div>
 
@@ -365,7 +385,7 @@
                                 <span class="text1">E-mail</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="email">
+                                <input type="text" name="email" id="email">
                             </div>
                         </div>
 
@@ -395,7 +415,7 @@
                                 <span class="text1">Endereço</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="endereco">
+                                <input type="text" name="endereco" id="endereco">
                             </div>
                         </div>
 
@@ -404,7 +424,7 @@
                                 <span class="text1">Número</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="endereco_numero">
+                                <input type="text" name="endereco_numero" id="endereco_numero">
                             </div>
                         </div>
 
@@ -413,7 +433,7 @@
                                 <span class="text1">Complemento</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="endereco_complemento">
+                                <input type="text" name="endereco_complemento" id="endereco_complemento">
                             </div>
                         </div>
 
@@ -422,7 +442,7 @@
                                 <span class="text1">Cidade</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="endereco_cidade">
+                                <input type="text" name="endereco_cidade" id="endereco_cidade">
                             </div>
                         </div>
 
@@ -431,7 +451,7 @@
                                 <span class="text1">Estado</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="endereco_estado">
+                                <input type="text" name="endereco_estado" id="endereco_estado">
                             </div>
                         </div>
 
@@ -440,7 +460,7 @@
                                 <span class="text1">CEP</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="endereco_cep">
+                                <input type="text" name="endereco_cep" id="endereco_cep">
                             </div>
                         </div>
 
@@ -528,7 +548,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 text-right">
-                                <input type="submit" name="enviar" value="Enviar">
+                                <input type="button" id="enviarcontrate" name="enviar" value="Enviar">
                             </div>
                         </div>
 
@@ -540,6 +560,131 @@
     </form>
 
     <script type="text/javascript">
+
+
+$( "#enviarcontrate" ).click(function() {
+    //Nome em branco
+    if ($( "#ddd" ).val() == '-- Selecione --') {
+        alert( "Selecione seu DDD!" );
+        $( "#ddd" ).focus();
+    } else {
+
+        if ($( "#plano" ).val() == '-- Selecione --') {
+            alert( "Qual plano você deseja?" );
+            $( "#plano" ).focus();
+        } else {
+
+            if ($( "#tipo_de_fatura" ).val() == '-- Selecione --') {
+                alert( "Qual o Tipo de Fatura?" );
+                $( "#tipo_de_fatura" ).focus();
+            } else {
+
+
+                if ($( "#data_de_vencimento" ).val() == '-- Selecione --') {
+                    alert( "Qual a Data de vencimento?" );
+                    $( "#data_de_vencimento" ).focus();
+                } else {
+
+                    if ($( "#slplano" ).val() == '-- Selecione --') {
+                        alert( "Qual a Forma de Pagamento?" );
+                        $( "#slplano" ).focus();
+                    } else {
+
+                        if ($( "#nome_completo" ).val() == '') {
+                            alert( "Preencha o Nome Completo" );
+                            $( "#nome_completo" ).focus();
+                        } else {
+
+                            if ($( "#sexo" ).val() == '-- Selecione --') {
+                                alert( "Preencha o Sexo" );
+                                $( "#sexo" ).focus();
+                            } else {
+
+                                if ($( "#data_de_nascimento" ).val() == '') {
+                                    alert( "Preencha a data de nascimento" );
+                                    $( "#data_de_nascimento" ).focus();
+                                } else {
+
+                                    if ($( "#cpf" ).val() == '') {
+                                        alert( "Preencha o CPF" );
+                                        $( "#cpf" ).focus();
+                                    } else {
+
+                                        if ($( "#rg" ).val() == '') {
+                                            alert( "Preencha o RG" );
+                                            $( "#rg" ).focus();
+                                        } else {
+
+                                            if ($( "#nome_da_mae" ).val() == '') {
+                                                alert( "Preencha o Nome da Mãe" );
+                                                $( "#nome_da_mae" ).focus();
+                                            } else {
+
+                                                if ($( "#email" ).val() == '') {
+                                                    alert( "Preencha o e-mail" );
+                                                    $( "#email" ).focus();
+                                                } else {
+
+                                                    if ($( "#telefone_residencial" ).val() == '') {
+                                                        alert( "Preencha o telefone residencial / comercial" );
+                                                        $( "#telefone_residencial" ).focus();
+                                                    } else {
+
+                                                        if ($( "#telefone_celular" ).val() == '') {
+                                                            alert( "Preencha o telefone celular" );
+                                                            $( "#telefone_celular" ).focus();
+                                                        } else {
+
+                                                            if ($( "#endereco" ).val() == '') {
+                                                                alert( "Preencha o Endereço" );
+                                                                $( "#endereco" ).focus();
+                                                            } else {
+
+                                                                if ($( "#endereco_numero" ).val() == '') {
+                                                                    alert( "Preencha o Número do logradouro" );
+                                                                    $( "#endereco_numero" ).focus();
+                                                                } else {
+
+                                                                    if ($( "#endereco_cidade" ).val() == '') {
+                                                                        alert( "Preencha a cidade" );
+                                                                        $( "#endereco_cidade" ).focus();
+                                                                    } else {
+
+                                                                        if ($( "#endereco_estado" ).val() == '') {
+                                                                            alert( "Preencha o Estado" );
+                                                                            $( "#endereco_estado" ).focus();
+                                                                        } else {
+
+                                                                            if ($( "#endereco_cep" ).val() == '') {
+                                                                                alert( "Preencha o CEP" );
+                                                                                $( "#endereco_cep" ).focus();
+                                                                            } else {
+                                                                                $( "#frmcontrate" ).submit();
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+});
+
+
+
+
+
         function validarEmail(email){
             campo = email;
             email = $( '#'+ email ).val();
