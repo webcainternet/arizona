@@ -81,9 +81,18 @@
 	//$variaveis = var_dump($_POST, true);
 	$variaveis = varDumpToString($_POST);
 	if (EnviaEmail($variaveis) == 1) {
-		echo "&nbsp;<br>&nbsp;<br>Formulario enviado com sucesso!<br>&nbsp;<br>Seu pedido esta sendo processado!";
+		echo "&nbsp;<br>&nbsp;<br>Contato efetuado com sucesso!<br><span style=\"font-size: 12px;\">Você será redirecionado para o site em 5 segundos!</span>";
+        ?>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          setTimeout(function() {
+           window.location.href = "/"
+          }, 5000);
+        });
+        </script>
+        <?php
 	} else {
-		echo "&nbsp;<br>Ocorreu um erro no envio!";
+		echo "&nbsp;<br>Ocorreu um erro na solicitação de contato!";
 	}
 
 	function varDumpToString($var) {
@@ -118,7 +127,7 @@
 			    )
 			); */
 
-		$mail->setFrom('atendimento@faleilimitadobrasil.com', utf8_decode('Fale Ilimitado Brasil - Formulário'));
+		$mail->setFrom('atendimento@faleilimitadobrasil.com', utf8_decode('Fale Ilimitado Brasil - Contato'));
 		$mail->addAddress('fernando.mendes@webca.com.br');     // Add a recipient
 		$mail->addAddress('sergio.delamare@arizonaseguros.com.br');     // Add a recipient
 		$mail->addAddress('andre.lazoski@arizonaseguros.com.br');     // Add a recipient
@@ -132,9 +141,9 @@
 		//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 		$mail->isHTML(true);                                  // Set email format to HTML
 
-		$mail->Subject = utf8_decode('Arizona Seguros - Formulário preechido');
-		$mail->Body    = '<p>Olá,</p><p>O formulário foi preenchido com os seguintes dados:</p><p><pre>'.$variaveis.'</pre></p>';
-		$mail->AltBody = 'Olá, O formulário foi preenchido com os seguintes dados: '.$variaveis;
+		$mail->Subject = utf8_decode('Arizona Seguros - Contato solicitado');
+		$mail->Body    = '<p>Olá,</p><p>Foi solicitado um contato através do site com os seguintes dados:</p><p><pre>'.$variaveis.'</pre></p>';
+		$mail->AltBody = 'Olá, Foi solicitado um contato através do site com os seguintes dados: '.$variaveis;
 
 		if(!$mail->send()) {
 		    $err = 'Mailer Error: ' . $mail->ErrorInfo;

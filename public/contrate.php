@@ -90,6 +90,18 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
+            $( "#data_de_nascimento" ).mask( "99/99/9999" );
+            $( "#cpf" ).mask("999.999.999-99");
+            $( "#cpf" ).change(function() { 
+                validarCPF( "cpf" ); 
+            });
+        });
+
+
+
+         
+
+        $(document).ready(function(){
 
             $('#ckportabilidade').change(function(){
                 if($("#ckportabilidade").is(':checked')) {
@@ -317,7 +329,7 @@
                                 <span class="text1">Data de Nascimento</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="data_de_nascimento">
+                                <input type="text" name="data_de_nascimento" id="data_de_nascimento">
                             </div>
                         </div>
 
@@ -326,7 +338,7 @@
                                 <span class="text1">CPF</span>
                             </div>
                             <div class="col-lg-9 text-left">
-                                <input type="text" name="cpf">
+                                <input type="text" name="cpf" id="cpf">
                             </div>
                         </div>
 
@@ -526,6 +538,70 @@
         </section>
 
     </form>
+
+    <script type="text/javascript">
+        function validarEmail(email){
+            campo = email;
+            email = $( '#'+ email ).val();
+            var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{0,10}(?:\.[a-z]{2,10})?)$/i;
+            if(filter.test(email))
+              valido = true;
+            else{
+                alert('E-Mail inválido!');
+                $('#'+ campo ).val('');
+                $('#'+ campo ).focus();
+                valido = false;
+            }
+            return valido;
+        }
+
+
+        function validarCPF(cpf) {
+            campo = cpf;
+            cpf = $( '#'+ cpf ).val();
+            cpf = cpf.replace(/[^\d]+/g,'');
+            if(cpf == '') return false;
+            // Elimina CPFs invalidos conhecidos
+            if (cpf.length != 11 ||
+                cpf == "00000000000" ||
+                cpf == "11111111111" ||
+                cpf == "22222222222" ||
+                cpf == "33333333333" ||
+                cpf == "44444444444" ||
+                cpf == "55555555555" ||
+                cpf == "66666666666" ||
+                cpf == "77777777777" ||
+                cpf == "88888888888" ||
+                cpf == "99999999999")
+                    CPFInvalido(campo);
+            // Valida 1o digito
+            add = 0;
+            for (i=0; i < 9; i ++)
+                add += parseInt(cpf.charAt(i)) * (10 - i);
+                rev = 11 - (add % 11);
+                if (rev == 10 || rev == 11)
+                    rev = 0;
+                if (rev != parseInt(cpf.charAt(9)))
+                    CPFInvalido(campo);
+            // Valida 2o digito
+            add = 0;
+            for (i = 0; i < 10; i ++)
+                add += parseInt(cpf.charAt(i)) * (11 - i);
+            rev = 11 - (add % 11);
+            if (rev == 10 || rev == 11)
+                rev = 0;
+            if (rev != parseInt(cpf.charAt(10)))
+                CPFInvalido(campo);
+
+            return true
+        }
+
+        function CPFInvalido(campo) {
+            alert('CPF inválido!');
+            $('#'+ campo ).val('');
+            $('#'+ campo ).focus();
+        }
+    </script>
 
 </body>
 

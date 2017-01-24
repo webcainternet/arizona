@@ -86,11 +86,7 @@
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                
+            <div class="navbar-header">                
                 <div class="divlogo">
                     <img class="logo" src="img/logoConecta.site.png" height="40">
                     <div>Representante autorizado:</div>
@@ -449,32 +445,34 @@
         </div>
     </section>
 
-    <aside class="bg-dark" id="portfolio">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Fale Conosco</h2>
-                <hr class="light">
-                <p>Precisa de ajuda ou quer nos deixar alguma mensagem? Preencha o formulário abaixo e deixe seu contato!</p>
-                <div class="row">
-                    <div class="col-md-6" style="padding-right: 0px;">
-                        <input type="text" name="nome" placeholder="Digite seu nome">
-                        <input type="text" name="email" placeholder="Digite seu email">
-                        <input type="text" name="telefone" placeholder="Digite seu telefone">
-                    </div>
+    <form method="post" action="envia_contato.php">
+        <aside class="bg-dark" id="portfolio">
+            <div class="container text-center">
+                <div class="call-to-action">
+                    <h2>Fale Conosco</h2>
+                    <hr class="light">
+                    <p>Precisa de ajuda ou quer nos deixar alguma mensagem? Preencha o formulário abaixo e deixe seu contato!</p>
+                    <div class="row">
+                        <div class="col-md-6" style="padding-right: 0px;">
+                            <input type="text" name="nome" placeholder="Digite seu nome">
+                            <input type="text" name="email" placeholder="Digite seu email">
+                            <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                        </div>
 
-                    <div class="col-md-6">
-                        <textarea name="mensagem" placeholder="Digite sua mensagem">
-                            
-                        </textarea>
-                    </div>
+                        <div class="col-md-6">
+                            <textarea name="mensagem" placeholder="Digite sua mensagem">
+                                
+                            </textarea>
+                        </div>
 
-                    <p class="text-right" style="margin-right: 10px;">
-                        <a href="#services" class="page-scroll btn btn-default btn-xl sr-button contato" data-sr-id="10" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: all 0.35s ease 0s, -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: all 0.35s ease 0s, transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">Enviar</a>
-                    </p>
+                        <p class="text-right" style="margin-right: 10px;">
+                            <input class="page-scroll btn btn-default btn-xl sr-button contato"  type="submit" name="enviar" value="Enviar">
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </aside>
+        </aside>
+    </form>
 
     <section id="textos" class="textos">
         <div class="container">
@@ -554,6 +552,7 @@
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="/js/jquery.maskedinput.min.js"></script>   
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -599,6 +598,13 @@
                 $zopim.livechat.window.show();
         });
     });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#telefone").mask("(99) 9999-9999?9");
+        });
     </script>
 
     <script src="js/notifIt.js" type="text/javascript"></script>
