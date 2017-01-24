@@ -609,6 +609,49 @@
 
     <script src="js/notifIt.js" type="text/javascript"></script>
     <link href="css/notifIt.css" type="text/css" rel="stylesheet">
+
+<!-- Google Code for Contrate129 Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script>
+window.addEventListener('load',function(){
+jQuery('.page-scroll.btn.btn-default.btn-xl.sr-button.contato').click(function(){
+goog_report_conversion()
+})
+});
+</script>
+
+
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 945871214;
+    w.google_conversion_label = "OXStCKuByW0Q7rKDwwM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
 </body>
 
 </html>
