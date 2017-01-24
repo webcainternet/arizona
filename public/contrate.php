@@ -391,7 +391,7 @@
 
                         <div class="row">
                             <div class="col-lg-3 text-right">
-                                <span class="text1">Telefones residencial/comercial</span>
+                                <span class="text1">Telefone residencial / comercial</span>
                             </div>
                             <div class="col-lg-9 text-left">
                                 <input type="text" name="telefone_residencial" id="telefone_residencial">
@@ -400,7 +400,7 @@
 
                         <div class="row">
                             <div class="col-lg-3 text-right">
-                                <span class="text1">Telefones celular</span>
+                                <span class="text1">Telefone celular</span>
                             </div>
                             <div class="col-lg-9 text-left">
                                 <input type="text" name="telefone_celular" id="telefone_celular">
