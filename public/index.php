@@ -88,12 +88,12 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">                
                 <div class="divlogo">
-                    <img class="logo" src="img/logoConecta.site.png" height="40">
+                    <img class="logo" src="img/logoConecta.site.png" height="37">
                     <div>Representante autorizado:</div>
                 </div>
 
-                <div class="divlogo">
-                    <img class="logo logoArizona" src="img/logoArizona.png" height="63">
+                <div class="divlogo" style="margin-left: 0px;">
+                    <img class="logo logoArizona" src="img/logoArizona.png" height="60">
                 </div>
 
             </div>
@@ -418,7 +418,7 @@
                                 </div>
 
                                 <div class="col-md-4 text-right">
-                                    <img src="img/hand-cc.png">
+                                    <img src="img/hand-cc.png" style="max-width: 100%;">
                                 </div>
 
                             </div>
