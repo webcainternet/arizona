@@ -34,17 +34,38 @@
     <link href="css/webca.css" rel="stylesheet">
 
     <style type="text/css">
-        .col-lg-6 {
-            width: 50%;
-            float: left;
+
+        @media (max-width: 500px) {
+            .col-lg-6 {
+                width: 100%;
+                float: left;
+                text-align: left;
+            }
+            .col-lg-3 {
+                width: 100%;
+                float: left;
+                text-align: left;
+            }
+            .col-lg-9 {
+                width: 100%;
+                float: left;
+                text-align: left;
+            }
         }
-        .col-lg-3 {
-            width: 25%;
-            float: left;
-        }
-        .col-lg-9 {
-            width: 75%;
-            float: left;
+
+        @media (min-width: 501px) {
+            .col-lg-6 {
+                width: 50%;
+                float: left;
+            }
+            .col-lg-3 {
+                width: 25%;
+                float: left;
+            }
+            .col-lg-9 {
+                width: 75%;
+                float: left;
+            }
         }
         body {
             background-color: #0f9bf2;
