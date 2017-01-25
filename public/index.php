@@ -586,9 +586,11 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        $(".fancybox").fancybox({
-            minWidth:1000
-        });
+        if (window.innerWidth < 500 && window.innerHeight < 500) {
+            $(".fancybox").fancybox({
+                minWidth:1000
+            });
+        }
     });
     </script>
 
