@@ -586,7 +586,17 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        if (window.innerWidth < 500 && window.innerHeight < 500) {
+
+
+if( $(window).width() > 500 && (!navigator.userAgent.match(/Android/i) ||
+!navigator.userAgent.match(/webOS/i) ||
+!navigator.userAgent.match(/iPhone/i) ||
+!navigator.userAgent.match(/iPod/i) ||
+navigator.userAgent.match(/BlackBerry/))
+){
+
+
+        
             $(".fancybox").fancybox({
                 minWidth:1000
             });
